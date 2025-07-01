@@ -1,0 +1,11 @@
+Data Peserta Bootcamp Digital Skill - Golang Backend Development
+1. Nama: Rizki Azka Fihi Aghnia
+2. Email: rizkiazkafihiaghnia996@gmail.com
+3. Sistem Operasi yang digunakan: MacOS
+4. Akun Github: rizkiazka99 (https://github.com/rizkiazka99)
+5. Akun Telegram: @ezio99
+6. Role Pekerjaan (BE/FE/DEVOPS/MAHASISWA) : FE - Mobile
+7. Umur: 26
+8. Pernah menggunakan Go? : Belum
+9. Bahasa Pemrograman yg pernah dipelajari: JavaScript, Python, Dart, Kotlin
+10. Pernah membuat REST API? : Pernah, menggunakan Node.js
