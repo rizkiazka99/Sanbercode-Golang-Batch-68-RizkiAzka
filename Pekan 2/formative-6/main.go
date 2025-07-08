@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"os"
 )
 
 func main() {
@@ -119,14 +120,15 @@ type Buah struct {
 	Harga      int    `json:"harga"`
 }
 
-func printStruct(fruit Buah) {
-	jsonData, err := json.MarshalIndent(fruit, "", " ")
+func printStruct(fruit *Buah) {
+	encoder := json.NewEncoder(os.Stdout)
+	encoder.SetIndent("", "  ")
+	encoder.SetEscapeHTML(false)
+	err := encoder.Encode(fruit)
 	if err != nil {
 		fmt.Println("Error:", err)
 		return
 	}
-
-	fmt.Println(string(jsonData))
 }
 
 func soal5() {
@@ -155,8 +157,8 @@ func soal5() {
 		Harga:      5000,
 	}
 
-	printStruct(pineapple)
-	printStruct(orange)
-	printStruct(watermelon)
-	printStruct(banana)
+	printStruct(&pineapple)
+	printStruct(&orange)
+	printStruct(&watermelon)
+	printStruct(&banana)
 }
